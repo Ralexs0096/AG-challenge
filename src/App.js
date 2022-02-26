@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react'
+import { fetchData } from './api'
+import Content from './components/Content'
+import Header from './components/Header'
 
 function App() {
+  const [data, setData] = useState()
+  const [country, setCountry] = useState('Nicaragua')
+  const [error, setError] = useState(false)
+
+  const getDataCovid = async () => {
+    const result = await fetchData(country)
+    console.log(result.hasOwnProperty('confirmed'))
+
+    if (result.hasOwnProperty('confirmed')) {
+      setData(result)
+      setError(false)
+    } else {
+      setError(true)
+    }
+  }
+
+  useEffect(() => {
+    getDataCovid()
+  }, [country])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header country={country} setCountry={setCountry} />
+      {!error ? (
+        <>
+          <Content data={data} country={country} />
+        </>
+      ) : (
+        <div className="country-not-found">
+          The country that you entered doesn't exist or is not available
+        </div>
+      )}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
