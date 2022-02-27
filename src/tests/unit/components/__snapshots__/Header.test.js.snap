@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> tests should display the <Header /> component 1`] = `
+<div
+  className="container container-header"
+>
+  <h1>
+    Covid 19 Statistics
+  </h1>
+  <input
+    className="input-search"
+    name="input"
+    onChange={[Function]}
+    placeholder="Search by Country"
+    type="text"
+    value=""
+  />
+  <button
+    className="button-filter"
+    onClick={[Function]}
+  >
+    Fetch
+  </button>
+</div>
+`;

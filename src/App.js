@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 import { fetchData } from './api'
 import Content from './components/Content'
 import Header from './components/Header'
@@ -10,7 +10,6 @@ function App() {
 
   const getDataCovid = async () => {
     const result = await fetchData(country)
-    console.log(result.hasOwnProperty('confirmed'))
 
     if (result.hasOwnProperty('confirmed')) {
       setData(result)

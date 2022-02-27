@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
-const Header = ({ country, setCountry }) => {
+const Header = ({ setCountry }) => {
   const [input, setInput] = useState('')
   const [alert, setAlert] = useState(false)
 
@@ -34,4 +35,9 @@ const Header = ({ country, setCountry }) => {
     </div>
   )
 }
+
+Header.protoTypes = {
+  setCountry: PropTypes.func.isRequired,
+}
+
 export default Header

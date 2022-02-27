@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Loader from './Loader'
 
 const Content = ({ data, country }) => {
@@ -35,6 +36,11 @@ const Content = ({ data, country }) => {
       </div>
     </div>
   )
+}
+
+Content.propTypes = {
+  country: PropTypes.string.isRequired,
+  data: PropTypes.object,
 }
 
 export default Content

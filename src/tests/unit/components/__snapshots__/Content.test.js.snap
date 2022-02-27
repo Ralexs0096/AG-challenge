@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content test Should show Content component 1`] = `
+<div
+  className="container"
+>
+  <h2>
+    Results for: 
+    <span
+      className="title-header-country"
+    >
+      nicaragua
+    </span>
+  </h2>
+  <div
+    className="row"
+  >
+    <div
+      className="card card-1 card-cm"
+    >
+      <h3>
+        Confirmed Cases
+      </h3>
+      <span
+        className="title-header"
+      >
+        18,004
+      </span>
+    </div>
+    <div
+      className="card card-2 card-cm"
+    >
+      <h3>
+        Death Toll
+      </h3>
+      <span
+        className="title-header"
+      >
+        224
+      </span>
+    </div>
+    <div
+      className="card card-3 card-cm"
+    >
+      <h3>
+        Recovered
+      </h3>
+      <span
+        className="title-header"
+      >
+        0
+      </span>
+    </div>
+    <div
+      className="card card-4 card-cm"
+    >
+      <h3>
+        Last Updated
+      </h3>
+      <span
+        className="title-header"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Content test should display the data upload items 1`] = `
+<div
+  className="container"
+>
+  <h2>
+    Results for: 
+    <span
+      className="title-header-country"
+    >
+      nicaragua
+    </span>
+  </h2>
+  <div
+    className="row"
+  >
+    <div
+      className="card card-1 card-cm"
+    >
+      <h3>
+        Confirmed Cases
+      </h3>
+      <span
+        className="title-header"
+      >
+        18,004
+      </span>
+    </div>
+    <div
+      className="card card-2 card-cm"
+    >
+      <h3>
+        Death Toll
+      </h3>
+      <span
+        className="title-header"
+      >
+        224
+      </span>
+    </div>
+    <div
+      className="card card-3 card-cm"
+    >
+      <h3>
+        Recovered
+      </h3>
+      <span
+        className="title-header"
+      >
+        0
+      </span>
+    </div>
+    <div
+      className="card card-4 card-cm"
+    >
+      <h3>
+        Last Updated
+      </h3>
+      <span
+        className="title-header"
+      />
+    </div>
+  </div>
+</div>
+`;
