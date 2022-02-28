@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { fetchData } from './api'
 import Content from './components/Content'
 import Header from './components/Header'
@@ -8,7 +8,7 @@ function App() {
   const [country, setCountry] = useState('Nicaragua')
   const [error, setError] = useState(false)
 
-  const getDataCovid = async () => {
+  const getDataCovid = useCallback(async () => {
     const result = await fetchData(country)
 
     if (result.hasOwnProperty('confirmed')) {
@@ -17,11 +17,11 @@ function App() {
     } else {
       setError(true)
     }
-  }
+  }, [country])
 
   useEffect(() => {
     getDataCovid()
-  }, [country])
+  }, [country, getDataCovid])
 
   return (
     <div>
