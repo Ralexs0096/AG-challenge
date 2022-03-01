@@ -1,17 +1,18 @@
-## _AG - Challenge_
+## COVID-19 STATISTIC APP | AG Software - Challenge
+##### Getting Started
+This app allows the user to get their respective country data for the covid-19 current statistics.
 
-
-covid 19 statistics application that allows to obtain the data of each country. 
-
-clone the repository in you computer executing this command in the terminal
-```
+##### Basic CLI Commands with instructions
+To start this project, pleaseclone the repository in your local drive by typing the following command in your console:
+bash
 git clone https://github.com/Ralexs0096/AG-challenge.git
-```
 
-then move into the AG-challenge folder and execute the next command for start the application
-```js 
+Next, move into the AG-challenge folder and execute the command below to start the application
+bash
 npm start
-```
 
-and you can see a preview here
-https://covid-19-ag-challenge.netlify.app/
+To verify that this command was successful, please go to the below link to test it out:
+[http://localhost:3000](http://localhost:3000/)
+
+##### App Live Preview:
+[https://covid-19-ag-challenge.netlify.app/](https://covid-19-ag-challenge.netlify.app/)
